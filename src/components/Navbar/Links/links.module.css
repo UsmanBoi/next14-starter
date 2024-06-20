@@ -1,0 +1,46 @@
+.links {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.logout {
+	border: none;
+	cursor: pointer;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-weight: bold;
+	border-radius: 1rem;
+}
+
+.menuButton,
+.mobileLinks {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.links {
+		display: none;
+	}
+
+	.menuButton {
+		display: block;
+		cursor: pointer;
+	}
+
+	.mobileLinks {
+		position: absolute;
+		top: 10rem;
+		right: 0;
+		width: 50%;
+		height: calc(100vh - 10rem);
+		background-color: rgb(255, 214, 154);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+}

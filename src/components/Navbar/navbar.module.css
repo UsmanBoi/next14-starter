@@ -1,0 +1,14 @@
+.navbarcon {
+	height: 9rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	position: relative;
+}
+
+.logo {
+	font-size: 3rem;
+	font-weight: bold;
+}

@@ -1,0 +1,18 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	height: 8rem;
+	align-items: center;
+	color: grey;
+	box-sizing: border-box;
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+
+.copyright {
+	font-size: 1.2rem;
+}
+
+.logo {
+	font-weight: bold;
+}

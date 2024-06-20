@@ -1,25 +1,119 @@
-:root{
-    --bg: #0d0c22;
-    --bgSoft: #2d2b42;
-    --text: white;
-    --textSoft: #e5e5e5;
-    --btn: #3673fd;
+html {
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg: linear-gradient(to bottom, rgba(4, 107, 167, 0.781), #eeff575e);
+	/* --bg: rgba(4, 107, 167, 0.781); */
+	--bgSoft: #2d2b42;
+	--text: white;
+	--textSoft: #e5e5e5;
+	--btn: #3673fd;
 }
 
 /* Important to use this universal selector because html elements have fked up default padding and margin
 Box sizing will make sure the div is specified pixels with pad and margin */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-background-color: var(--bg);
-color: var(--text);
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-size: 1.6rem;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.rootContainer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100vh;
+}
+
+.navbarContainer {
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	/* border: 1rem solid black; */
+}
+
+.footerContainer {
+	box-sizing: border-box;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	/* border: 1rem solid black; */
+}
+.contentCon {
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	/* border: 1rem solid black; */
+	box-sizing: border-box;
+}
+
+.content {
+	padding-left: 3.6rem;
+	padding-right: 3.6rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	box-sizing: border-box;
+	margin: 0;
+	/* border: 1rem solid black; */
+	width: 100%;
+}
+
+@media (max-width: 1536px) {
+	.contentCon,
+	.content {
+		width: 100%;
+	}
+}
+@media (max-width: 1366px) {
+	.contentCon .content {
+		width: 100%;
+	}
+}
+@media (max-width: 1280px) {
+	.contentCon {
+		width: 100%;
+	}
+	.content {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: 90%;
+	}
+}
+@media (max-width: 1024px) {
+	.content {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		width: 80%;
+	}
+}
+@media (max-width: 768px) {
+	.content {
+		width: 60%;
+	}
+}
+@media (max-width: 640px) {
+	.contentCon .content {
+		width: 50%;
+	}
 }

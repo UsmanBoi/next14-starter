@@ -1,0 +1,64 @@
+.container {
+	display: flex;
+	gap: 8rem;
+}
+.skillContainer {
+	box-sizing: border-box;
+	padding-right: 13rem;
+	display: flex;
+	gap: 3rem;
+}
+
+.indivCon {
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	flex: 1;
+	display: flex;
+	gap: 1.4rem;
+	flex-direction: column;
+	align-items: center;
+}
+.quantity {
+	font-size: 3.2rem;
+	color: rgb(28, 28, 218);
+	align-self: self-start;
+}
+
+.skill {
+	font-size: 1.6rem;
+	align-self: self-start;
+}
+.pageName {
+	font-size: 1.6 rem;
+	color: rgb(28, 28, 218);
+}
+.tagLine {
+	padding-right: 10rem;
+	box-sizing: border-box;
+	font-size: 1.8rem;
+}
+
+.description {
+	font-size: 1.6rem;
+}
+
+.txtContainer {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.imgContainer {
+	flex: 1;
+	position: relative;
+}
+
+.abtImg {
+	box-sizing: border-box;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}

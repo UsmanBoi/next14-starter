@@ -1,0 +1,70 @@
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 55rem;
+	gap: 3rem;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	/* border: solid 1px black; */
+}
+
+.bgCon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1); /* Light background color */
+	backdrop-filter: blur(4px); /* Blurring effect */
+	z-index: -1; /* Place it behind the content */
+	pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+	border-radius: inherit;
+}
+.upperCon {
+	/* border: solid 1px black; */
+	width: 40%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.date {
+	margin-top: -1rem;
+	width: 20%;
+	color: whitesmoke;
+	font-size: 1.4rem;
+}
+.blogImg {
+	object-fit: cover;
+}
+.lowerCon {
+	/* border: solid 1px black; */
+	align-self: self-start;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.blogTitle {
+	font-size: 3.6rem;
+}
+
+.blogDesc {
+	font-size: 1.4rem;
+}
+
+.imageCon {
+	/* border: solid 1px black; */
+	width: 90%;
+	height: 100%;
+	position: relative;
+}

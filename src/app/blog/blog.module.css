@@ -1,0 +1,32 @@
+.container {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 4rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+.post {
+	animation: appear linear;
+	animation-timeline: view();
+}
+.post {
+	
+	box-sizing: border-box;
+	height: inherit;
+	width: 30%;
+}
+
+@media screen and (max-width: 1280px) {
+	.post {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.post {
+		width: 100%;
+	}
+}
