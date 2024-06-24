@@ -5,8 +5,8 @@ html {
 }
 
 :root {
-	--bg: linear-gradient(to bottom, rgba(4, 107, 167, 0.781), #eeff575e);
-	/* --bg: rgba(4, 107, 167, 0.781); */
+	/* --bg: linear-gradient(to bottom, rgba(4, 107, 167, 0.781), #eeff575e); */
+	--bg: rgba(208, 255, 0, 0.4);
 	--bgSoft: #2d2b42;
 	--text: white;
 	--textSoft: #e5e5e5;
