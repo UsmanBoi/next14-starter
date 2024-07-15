@@ -68,10 +68,10 @@ export default function Home() {
 	return (
 		<div>
 			<Header />
-			<section className="mb-40">
+			<section className="my-10 2xl:my-20">
 				<div className="flex gap-4 h-[50vh] items-center">
-					<div className="flex flex-3 h-[50vh] w-full items-center">
-						<h2 className="text-[11rem] leading-none font-space font-light">
+					<div className="flex flex-3 h-[30vh] 2xl:h-[50vh] w-full items-center">
+						<h2 className="text-9xl 2xl:text-[11rem] leading-none font-space font-light">
 							Bridging brands <span className="font-semibold pr-16">with</span>
 							<span className="font-semibold text-[#7DF9FF]">Success </span>
 						</h2>
