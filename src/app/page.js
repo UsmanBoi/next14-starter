@@ -443,16 +443,16 @@ export default function Home() {
 							<p
 								className={` text-3xl leading-10 tracking-wide font-saira ${
 									activeIndex === 2
-										? "block mt-[10rem] transition-transform duration-[500ms]"
+										? "block mt-[11rem] transition-transform duration-[500ms]"
 										: "hidden"
 								}`}
 							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
 								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
 								in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-								nulla pariatur.
+								nulla pariatur Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris.
 							</p>
 						</div>
 					</div>
