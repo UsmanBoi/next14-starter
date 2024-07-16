@@ -31,7 +31,7 @@ export const ArrTR = () => {
 			<style jsx>{`
 				.group:hover .circle,
 				.group:hover .arrow {
-					stroke: blue-200;
+					stroke: #7df9ff;
 				}
 
 				.group:hover .arrow {
@@ -104,7 +104,7 @@ export const ArrBR = () => {
 			<style jsx>{`
 				.group:hover .circle,
 				.group:hover .arrow {
-					stroke: blue-200;
+					stroke: #7df9ff;
 				}
 
 				.group:hover .arrow {
@@ -147,7 +147,7 @@ export const ArrR = () => {
 			<style jsx>{`
 				.group:hover .circle,
 				.group:hover .arrow {
-					stroke: blue-200;
+					stroke: #7df9ff;
 				}
 
 				.group:hover .arrow {
@@ -190,7 +190,7 @@ export const ArrL = () => {
 			<style jsx>{`
 				.group:hover .circle,
 				.group:hover .arrow {
-					stroke: blue-200;
+					stroke: #7df9ff;
 				}
 
 				.group:hover .arrow {
