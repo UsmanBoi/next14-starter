@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Header from "../../components/ui/Header";
+import ToggleButton from "../../components/ui/ToggleButton";
 import React from "react";
 import { useState } from "react";
 
@@ -12,6 +12,19 @@ const OurWork = ({ category, title }) => {
 			</span>
 			<span className="font-space text-8xl font-bold">{title}</span>
 			<div className="my-4 w-[700px] h-1 bg-zinc-800  group-hover:bg-[#7df9ff]/80 transition-all duration-[500ms]"></div>
+		</div>
+	);
+};
+
+const WorkSec = ({ category, description }) => {
+	return (
+		<div className="flex flex-col gap-8">
+			<div className="flex gap-10 items-center">
+				<span className="font-space text-8xl font-bold">{category}</span>
+				<ToggleButton />
+			</div>
+			<span className="font-saira font-thin text-3xl">{description}</span>
+			<div className="my-4 w-full h-1 bg-zinc-800"></div>
 		</div>
 	);
 };
@@ -67,7 +80,6 @@ export default function Home() {
 
 	return (
 		<div>
-			<Header />
 			<section className="my-10 2xl:my-20">
 				<div className="flex gap-4 h-[50vh] items-center">
 					<div className="flex flex-3 h-[30vh] 2xl:h-[50vh] w-full items-center">
@@ -83,9 +95,9 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="my-8 py-8 flex justify-between items-center">
+				<div className="my-8 flex justify-between items-center">
 					<div>
-						<button title="Go to" className="group cursor-pointer outline-none">
+						<button className="group cursor-pointer outline-none">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="240px"
@@ -456,6 +468,57 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
+				</div>
+			</section>
+
+			<section className="my-10 2xl:my-20">
+				<div className="flex flex-col gap-14">
+					<div>
+						<WorkSec
+							category="digital"
+							description="Something about digital market etc etc"
+						/>
+
+						<div className="flex items-center my-10">
+							<div className="flex gap-5 flex-wrap">
+								{[
+									"define.",
+									"collect.",
+									"analyse.",
+									"develope.",
+									"feedback.",
+									"improve.",
+								].map((title) => (
+									<div
+										key={title}
+										className="w-[32rem] h-[18rem] backdrop-blur-md border border-white/10 rounded-3xl shadow-lg hover:bg-[#7df9ff]/40 bg-[#272727]/40 px-10 py-6 transition duration-[400ms] "
+									>
+										<div className="flex flex-col gap-6 justify-center h-full">
+											<div>
+												<h3 className="font-space font-bold text-7xl">
+													{title}
+												</h3>
+											</div>
+											<div className="w-96">
+												<p className="text-xl font-saira font-semibold">
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit.
+												</p>
+											</div>
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+					</div>
+					<WorkSec
+						category="web"
+						description="Something about Web market etc etc"
+					/>
+					<WorkSec
+						category="data analytics"
+						description="Something about data analytics market etc etc"
+					/>
 				</div>
 			</section>
 		</div>

@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import localfont from "next/font/local";
-import Head from "next/head";
+import Header from "../../components/ui/Header";
+import Footer from "../../components/ui/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,7 +33,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${space.variable} ${saira.variable}`}>
 			<body className={inter.className}>
-				<main className="box-border px-[6rem] 2xl:px-[10rem]">{children}</main>
+				<main className="box-border px-[6rem] 2xl:px-[10rem]">
+				<Header />
+					{children}
+				<Footer />
+					</main>
 			</body>
 		</html>
 	);

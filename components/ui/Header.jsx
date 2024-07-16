@@ -5,9 +5,11 @@ import React from "react";
 const Header = () => {
 	return (
 		<div className="w-full h-20 2xl:h-24 flex justify-between my-4 py-10 2xl:py-20 items-center">
-			<div className="w-[9rem] h-20 2xl:h-20 relative">
-				<Image src="/logo.png" alt="logo" fill></Image>
-			</div>
+			<Link href="/">
+				<div className="w-[9rem] h-20 2xl:h-20 relative">
+					<Image src="/logo.png" alt="logo" fill></Image>
+				</div>
+			</Link>
 			<div>
 				<button
 					title="Add New"
