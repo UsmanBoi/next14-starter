@@ -148,6 +148,9 @@ const BlurCard = ({ id, className }) => {
 						submit your resume and a cover letter detailing your experience and
 						why you would be a great fit for Syntax Bridge.
 					</p>
+					<div className="flex flex-row-reverse">
+						<ArrTR />
+					</div>
 				</div>
 			)}
 		</div>
