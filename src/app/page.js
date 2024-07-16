@@ -4,15 +4,16 @@ import ToggleButton from "../../components/ui/ToggleButton";
 import React from "react";
 import { useState } from "react";
 import { FaRegCircle } from "react-icons/fa";
+import { ArrBL, ArrBR, ArrL, ArrR } from "../../components/ui/Arrows";
 
 const OurWork = ({ category, title }) => {
 	return (
 		<div className="flex flex-col gap-6 group">
-			<span className="font-saira font-light text-3xl group-hover:text-[#7df9ff]/80 transition duration-[500ms]">
+			<span className="font-saira font-light text-3xl group-hover:text-blue-200/80 transition duration-[500ms]">
 				{category}
 			</span>
 			<span className="font-space text-8xl font-bold">{title}</span>
-			<div className="my-4 w-[700px] h-1 bg-zinc-800  group-hover:bg-[#7df9ff]/80 transition-all duration-[500ms]"></div>
+			<div className="my-4 w-[700px] h-1 bg-zinc-800  group-hover:bg-blue-200/80 transition-all duration-[500ms]"></div>
 		</div>
 	);
 };
@@ -81,16 +82,23 @@ export default function Home() {
 
 	return (
 		<div>
-			<section className="my-10 2xl:my-20">
+			<section className="my-8 2xl:my-16">
 				<div className="flex gap-4 h-[50vh] items-center">
-					<div className="flex flex-3 h-[30vh] 2xl:h-[50vh] w-full items-center">
-						<h2 className="text-9xl 2xl:text-[11rem] leading-none font-space font-light">
-							Bridging brands <span className="font-semibold pr-16">with</span>
-							<span className="font-semibold text-[#7DF9FF]">Success </span>
+					<div className="flex flex-col flex-3 h-[30vh] 2xl:h-[50vh] w-full items-start justify-evenly">
+						<h2 className="text-9xl 2xl:text-[10rem] leading-none font-space font-light">
+							Bridging brands
 						</h2>
+						<div className="flex gap-12 justify-between">
+							<span className="font-semibold text-9xl 2xl:text-[10rem]">
+								with
+							</span>
+							<span className="font-semibold text-blue-200 text-9xl 2xl:text-[10rem]">
+								Success
+							</span>
+						</div>
 					</div>
 					<div className="flex flex-1 -rotate-90 w-full">
-						<div className="font-space flex items-center gap-20 ">
+						<div className="font-space flex gap-20 ">
 							<span>Instagram</span>
 							<span>Facebook</span>
 						</div>
@@ -98,42 +106,7 @@ export default function Home() {
 				</div>
 				<div className="my-8 flex justify-between items-center">
 					<div>
-						<button className="group cursor-pointer outline-none">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="240px"
-								height="240px"
-								viewBox="0 0 24 24"
-								className="stroke-white fill-none transition duration-300"
-							>
-								<path
-									d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-									className="circle transition duration-300"
-									strokeWidth="0.3"
-								></path>
-								<path
-									d="M10 10L14 14"
-									className="arrow transition-transform duration-300"
-									strokeWidth="0.3"
-								></path>
-								<path
-									d="M11 14L14 14L14 11"
-									className="arrow transition-transform duration-300"
-									strokeWidth="0.3"
-								></path>
-							</svg>
-						</button>
-						<style jsx>{`
-							.group:hover .circle,
-							.group:hover .arrow {
-								stroke: #7df9ff;
-							}
-
-							.group:hover .arrow {
-								transform: scale(1.25);
-								transform-origin: start;
-							}
-						`}</style>
+						<ArrBR />
 					</div>
 
 					<div className="w-[30rem]">
@@ -160,7 +133,7 @@ export default function Home() {
 							{cardData.map((card) => (
 								<div
 									key={card.id}
-									className="min-w-[40rem] min-h-[40rem] backdrop-blur-md border group border-white/10 rounded-3xl shadow-lg hover:bg-[#7df9ff]/30 bg-[#5A5A5A]/10 px-10 py-8 hover:-translate-y-20 transition duration-[600ms] "
+									className="min-w-[40rem] min-h-[40rem] backdrop-blur-md border group border-white/10 rounded-3xl shadow-lg hover:bg-blue-200/30 bg-[#5A5A5A]/10 px-10 py-8 hover:-translate-y-20 transition duration-[600ms] "
 								>
 									<div className="flex flex-col gap-20 justify-between h-full">
 										<h3 className="font-space font-bold text-8xl">
@@ -185,32 +158,28 @@ export default function Home() {
 			</section>
 
 			<section className="my-20">
-				<div className="flex my-10 items-center gap-10 overflow-x-auto no-scrollbar w-full ">
-					<span className="font-space font-bold text-9xl">our work</span>
-					<div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="200px"
-							height="200px"
-							viewBox="0 0 24 24"
-							className="stroke-white fill-none transition duration-300"
-						>
-							<path
-								d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-								className="circle transition duration-300"
-								strokeWidth="0.3"
-							></path>
-							<path
-								d="M14 10L10 14"
-								className="arrow transition-transform duration-300"
-								strokeWidth="0.3"
-							></path>
-							<path
-								d="M13 14L10 14L10 11"
-								className="arrow transition-transform duration-300"
-								strokeWidth="0.3"
-							></path>
-						</svg>
+				<div className="my-14 w-full  h-[30vh]">
+					<div className="flex absolute -ml-[10rem] gap-4 nowrap overflow-x-hidden">
+						<div className="flex items-center gap-8 justify-evenly slide-animation">
+							<span className="font-space min-w-max font-bold text-9xl">
+								our work
+							</span>
+							<ArrBL />
+							<span className="font-space font-bold min-w-max  text-9xl">
+								our work
+							</span>
+							<ArrBL />
+						</div>
+						<div className="flex items-center gap-8 justify-evenly slide-animation">
+							<span className="font-space min-w-max font-bold text-9xl">
+								our work
+							</span>
+							<ArrBL />
+							<span className="font-space min-w-max  font-bold text-9xl">
+								our work
+							</span>
+							<ArrBL />
+						</div>
 					</div>
 				</div>
 
@@ -223,81 +192,11 @@ export default function Home() {
 
 							<div className="flex gap-10">
 								<div>
-									<button className="group cursor-pointer outline-none">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="240px"
-											height="240px"
-											viewBox="0 0 24 24"
-											className="stroke-white fill-none transition duration-300"
-										>
-											<path
-												d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-												className="circle transition duration-300"
-												strokeWidth="0.3"
-											></path>
-											<path
-												d="M14 12L8 12"
-												className="arrow transition-transform duration-300"
-												strokeWidth="0.3"
-											></path>
-											<path
-												d="M10 10L8 12L10 14"
-												className="arrow transition-transform duration-300"
-												strokeWidth="0.3"
-											></path>
-										</svg>
-									</button>
-									<style jsx>{`
-										.group:hover .circle,
-										.group:hover .arrow {
-											stroke: #7df9ff;
-										}
-
-										.group:hover .arrow {
-											transform: scale(1.25);
-											transform-origin: right;
-										}
-									`}</style>
+									<ArrL />
 								</div>
 
 								<div>
-									<button className="group cursor-pointer outline-none">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="240px"
-											height="240px"
-											viewBox="0 0 24 24"
-											className="stroke-white fill-none transition duration-300"
-										>
-											<path
-												d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-												className="circle transition duration-300"
-												strokeWidth="0.3"
-											></path>
-											<path
-												d="M10 12L16 12"
-												className="arrow transition-transform duration-300"
-												strokeWidth="0.3"
-											></path>
-											<path
-												d="M14 10L16 12L14 14"
-												className="arrow transition-transform duration-300"
-												strokeWidth="0.3"
-											></path>
-										</svg>
-									</button>
-									<style jsx>{`
-										.group:hover .circle,
-										.group:hover .arrow {
-											stroke: #7df9ff;
-										}
-
-										.group:hover .arrow {
-											transform: scale(1.25);
-											transform-origin: left;
-										}
-									`}</style>
+									<ArrR />
 								</div>
 							</div>
 						</div>
@@ -321,7 +220,7 @@ export default function Home() {
 										className="object-fit object-center group-hover:scale-125 transition-transform duration-[400ms] origin-center"
 									></Image>
 								</div>
-								<div className="absolute inset-0 flex items-center justify-center bg-[#7df9ff] opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+								<div className="absolute inset-0 flex items-center justify-center bg-blue-200 opacity-0 group-hover:opacity-70 transition-opacity duration-300">
 									<div className="mt-[1500px] group-hover:mt-0 hover:transition duration-[500ms]">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -356,26 +255,35 @@ export default function Home() {
 				<div className="my-20">
 					<div className="flex gap-10 justify-between">
 						<div className="flex flex-col gap-10 items-start">
-							<button>
+							<button onClick={() => toggleParagraph(0)}>
 								<h2
-									className="font-space text-9xl text-zinc-600 font-bold"
-									onClick={() => toggleParagraph(0)}
+									className={`font-space text-9xl font-bold ${
+										activeIndex === 0
+											? "text-blue-200 transition duration-[400ms]"
+											: "text-zinc-600"
+									}`}
 								>
 									search engine
 								</h2>
 							</button>
-							<button>
+							<button onClick={() => toggleParagraph(1)}>
 								<h2
-									className="font-space text-9xl text-zinc-600 font-bold"
-									onClick={() => toggleParagraph(1)}
+									className={`font-space text-9xl font-bold  ${
+										activeIndex === 1
+											? "text-blue-200 transition duration-[400ms]"
+											: "text-zinc-600"
+									}`}
 								>
 									analytics
 								</h2>
 							</button>
-							<button>
+							<button onClick={() => toggleParagraph(2)}>
 								<h2
-									className="font-space text-9xl text-zinc-600 font-bold"
-									onClick={() => toggleParagraph(2)}
+									className={`font-space text-9xl font-bold  ${
+										activeIndex === 2
+											? "text-blue-200 transition duration-[400ms]"
+											: "text-zinc-600"
+									}`}
 								>
 									visualization
 								</h2>
@@ -451,7 +359,7 @@ export default function Home() {
 								].map((title) => (
 									<div
 										key={title}
-										className="w-[32rem] h-[18rem] backdrop-blur-md border border-white/10 rounded-3xl shadow-lg hover:bg-[#7df9ff]/40 bg-[#272727]/40 px-10 py-6 transition duration-[400ms] "
+										className="w-[32rem] h-[18rem] backdrop-blur-md border border-white/10 rounded-3xl shadow-lg hover:bg-blue-200/40 bg-[#272727]/40 px-10 py-6 transition duration-[400ms] "
 									>
 										<div className="flex flex-col gap-6 justify-center h-full">
 											<div>

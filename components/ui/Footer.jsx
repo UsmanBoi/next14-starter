@@ -37,7 +37,7 @@ const ArrTR = () => {
 			<style jsx>{`
 				.group:hover .circle,
 				.group:hover .arrow {
-					stroke: #7df9ff;
+					stroke: blue-200;
 				}
 
 				.group:hover .arrow {
@@ -91,7 +91,7 @@ const BlurCard = ({ id, className }) => {
 					</p>
 					<Link
 						href="/"
-						className="font-saira text-2xl text-[#7df9ff] underline"
+						className="font-saira text-2xl text-blue-200 underline"
 					>
 						read more
 					</Link>
@@ -106,7 +106,7 @@ const BlurCard = ({ id, className }) => {
 					<div className="flex justify-between">
 						<Link
 							href="/"
-							className="font-saira text-2xl text-[#7df9ff] underline"
+							className="font-saira text-2xl text-blue-200 underline"
 						>
 							read more
 						</Link>
@@ -195,7 +195,7 @@ const Footer = () => {
 
 			<div className="w-full h-20 2xl:h-24 flex justify-between my-4 py-10 2xl:py-20 items-center">
 				<div className="flex gap-1">
-					<span className="font-saira text-xl text-[#7df9ff]">
+					<span className="font-saira text-xl text-blue-200">
 						© syntaxbridge.
 					</span>
 					<span>all rights reserved.</span>

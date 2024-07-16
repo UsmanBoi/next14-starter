@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+	box-sizing: border-box;
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
@@ -18,9 +19,11 @@
 
 html {
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 
 body {
+	box-sizing: border-box;
 	overflow: hidden;
 	color: rgb(var(--foreground-rgb));
 	background: linear-gradient(
@@ -44,4 +47,17 @@ body {
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
 	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.slide-animation {
+	animation: slide 4s linear infinite;
 }

@@ -14,7 +14,7 @@ const ToggleButton = () => {
 		>
 			<div
 				className={`absolute top-0 left-0 h-full w-1/2 rounded-full flex items-center justify-center transform transition-transform duration-300 ${
-					isToggled ? "translate-x-full bg-[#7DF9FF] rotate-90" : "bg-white"
+					isToggled ? "translate-x-full bg-blue-200 rotate-90" : "bg-white"
 				}`}
 			>
 				<svg
