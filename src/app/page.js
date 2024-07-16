@@ -3,6 +3,7 @@ import Image from "next/image";
 import ToggleButton from "../../components/ui/ToggleButton";
 import React from "react";
 import { useState } from "react";
+import { FaRegCircle } from "react-icons/fa";
 
 const OurWork = ({ category, title }) => {
 	return (
@@ -222,10 +223,7 @@ export default function Home() {
 
 							<div className="flex gap-10">
 								<div>
-									<button
-										title="Go to"
-										className="group cursor-pointer outline-none"
-									>
+									<button className="group cursor-pointer outline-none">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											width="240px"
@@ -239,12 +237,12 @@ export default function Home() {
 												strokeWidth="0.3"
 											></path>
 											<path
-												d="M17 12L7 12"
+												d="M14 12L8 12"
 												className="arrow transition-transform duration-300"
 												strokeWidth="0.3"
 											></path>
 											<path
-												d="M11 16L7 12L11 8"
+												d="M10 10L8 12L10 14"
 												className="arrow transition-transform duration-300"
 												strokeWidth="0.3"
 											></path>
@@ -262,11 +260,9 @@ export default function Home() {
 										}
 									`}</style>
 								</div>
+
 								<div>
-									<button
-										title="Go to"
-										className="group cursor-pointer outline-none"
-									>
+									<button className="group cursor-pointer outline-none">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											width="240px"
@@ -280,12 +276,12 @@ export default function Home() {
 												strokeWidth="0.3"
 											></path>
 											<path
-												d="M7 12L17 12"
+												d="M10 12L16 12"
 												className="arrow transition-transform duration-300"
 												strokeWidth="0.3"
 											></path>
 											<path
-												d="M13 16L17 12L13 8"
+												d="M14 10L16 12L14 14"
 												className="arrow transition-transform duration-300"
 												strokeWidth="0.3"
 											></path>
@@ -308,45 +304,9 @@ export default function Home() {
 						<div className="flex flex-col w-[780px] h-[1100px] border-2 border-white rounded-3xl px-12 pt-4 pb-16 gap-10 justify-evenly">
 							<div className="flex justify-between items-center">
 								<div className="flex gap-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="30px"
-										height="30px"
-										viewBox="0 0 24 24"
-										className="stroke-white fill-none transition duration-300"
-									>
-										<path
-											d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-											className="circle transition duration-300"
-											strokeWidth="1"
-										></path>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="30px"
-										height="30px"
-										viewBox="0 0 24 24"
-										className="stroke-white fill-none transition duration-300"
-									>
-										<path
-											d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-											className="circle transition duration-300"
-											strokeWidth="1"
-										></path>
-									</svg>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="30px"
-										height="30px"
-										viewBox="0 0 24 24"
-										className="stroke-white fill-none transition duration-300"
-									>
-										<path
-											d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-											className="circle transition duration-300"
-											strokeWidth="1"
-										></path>
-									</svg>
+									<FaRegCircle className="w-[30px] h-[30px] " />
+									<FaRegCircle className="w-[30px] h-[30px] " />
+									<FaRegCircle className="w-[30px] h-[30px] " />
 								</div>
 								<div className="w-[8rem] h-[4rem] relative">
 									<Image src="/logo.png" alt="logo" fill></Image>
